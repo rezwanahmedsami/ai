@@ -27,12 +27,12 @@ recognition.onresult = function (event) {
    const transcript = event.results[current][0].transcript;
    const lower = transcript.toLowerCase();
    content.textContent = lower;
-   //const checkcall =  lower.split(" ",1);
-   // if (checkcall == "sara") {
-      // const replacesara = lower.replace("what", '');
-      // console.log(replacesara);
-      api(lower);
-   // }
+   const checkcall =  lower.split(" ",1);
+   if (checkcall == "sara") {
+       const replacesara = lower.replace("what", '');
+       console.log(replacesara);
+      api(replacesara);
+    }
 };
 
 // onclick recognization start
