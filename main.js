@@ -29,7 +29,7 @@ recognition.onresult = function (event) {
    content.textContent = lower;
    const checkcall =  lower.split(" ",1);
    if (checkcall == "sara") {
-       const replacesara = lower.replace("what", '');
+       const replacesara = lower.replace("sara", '');
        console.log(replacesara);
       api(replacesara);
     }
